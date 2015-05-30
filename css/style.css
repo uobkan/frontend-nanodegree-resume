@@ -1,7 +1,7 @@
 * {
   padding:0;
   margin:0;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Oswald', sans-serif;
 }
 
 .clearfix {
@@ -11,11 +11,12 @@
 .education-entry, .work-entry, .project-entry {
   padding-left: 5%;
   padding-right: 5%;
+
 }
 
 h1 {
   font-size: 40px;
-  color: #F5A623;
+  color: #000000;
   line-height: 48px;
   display: inline;
 }
@@ -23,7 +24,7 @@ h1 {
 h2 {
   font-weight: bold;
   font-size: 24px;
-  color: #999999;
+  color: #000000;
   line-height: 29px;
   padding: 10px;
 }
@@ -38,8 +39,14 @@ h3 {
 h4 {
   font-weight: bold;
   font-size: 14px;
-  color: #4A4A4A;
+  color: #000000;
   line-height: 17px;
+}
+
+h6 {
+  font-weight: bold;
+  font-size: 16px;
+  color: #000000;
 }
 
 h2, h3, h4, h5 {
@@ -48,60 +55,161 @@ h2, h3, h4, h5 {
   padding-right: 5%;
 }
 
+/* Creative Process Graphs */
+#process-wrapper {
+  margin: 15px auto;
+}
+
+#process {
+  width:85%;
+  margin: 0 auto;
+}
+
+.background {
+    fill: rgb(255, 195, 0);;
+    fill-opacity: 0.01;
+}
+
+.component {
+    fill: orange;
+}
+
+.component .label {
+    text-anchor: middle;
+    fill: #000;
+}
+
+.arc {
+    stroke-weight:0.1;
+    fill: #000;
+}
+
+
+.arc2 {
+    stroke-weight:0.1;
+    fill: #000;
+}
+
+
+.label {
+    text-anchor: middle;
+}
+
+.radial-svg {
+    display: block;
+    height: 150px;
+    margin: 0 auto;
+}
+
+#test .arc2 {
+  stroke-weight:0.1;
+  fill: #3660b0;
+}
+
+#outer {
+  background:#FFFFFF;
+  border-radius: 5px;
+  color: #000;
+}
+
+#div1, #div2, #div3, #div4 {
+  box-sizing: border-box;
+  width:33%;
+  float: left;
+}
+
+#div2 .arc {
+  stroke-weight: 0.1;
+  fill: #000;
+}
+
+#div2 .arc2 {
+  stroke-weight: 0.1;
+  fill: #000;
+}
+
+#div3 .arc {
+  stroke-weight: 0.1;
+  fill: #000;
+}
+
+.radial {
+  border-radius: 3px;
+  color: #000;
+
+}
+
+/* End of Graphs*/
+
 
 .date-text {
   font-style: italic;
-  font-size: 14px;
-  color: #999999;
-  line-height: 16px;
+  font-size: 15px;
+  font-family: 'Playfair Display', serif;
+  color: #000000;
+  line-height: 21px;
   float: left;
 }
 
 .location-text {
   font-style: italic;
   font-size: 14px;
-  color: #999999;
-  line-height: 16px;
+  color: rgb(255, 195, 0);
+  line-height: 21px;
   float: right;
 
 }
 
 p {
   font-size: 14px;
-  color: #333333;
+  color: #000000;
   line-height: 21px;
+
 }
 
 a {
-  color: #1199C3;
+  color: #000000;
   text-decoration: none;
   margin-top: 10px;
   display: block;
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  font-weight: bold;
+}
+
+hr {
+    border: 0;
+    height: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid #000000;
 }
 
 .welcome-message {
   font-style: italic;
   font-size: 18px;
-  color: #F3F3F3;
+  color: #000000;
   line-height: 28px;
 }
 
 #skillsH3 {
-  color: #F5AE23;
-  display: none;
+  color: #000000;
 }
 
 .orange {
-  background-color: #F5AE23;
+  background-color: #000000;
 }
 
-.orange-text {
-  color: #F5AE23;
-}
-
-.white-text {
+.alt-text {
   font-weight: bold;
-  color: #FFFFFF;
+  color: #000000;
+  font-family: 'Playfair Display', serif;
+}
+
+.alt2-text {
+  font-weight: 400;
+  font-family: 'Playfair Display', serif;
+  color: #000000;
+  font-style: italic;
 }
 
 .gray {
@@ -115,8 +223,74 @@ a {
 }
 
 /* TODO: Replace with image later */
+#topheader {
+  background-color: rgb(255, 195, 0);
+}
+
+#logobox {
+  width:196px;
+
+  overflow: hidden;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+.logoheader {
+  position: relative;
+  overflow: hidden;
+
+
+}
+
+.logoheader img.bottom {
+  left: 0px;
+  top: 0px;
+  width: 180px;
+  height: 184px;
+  position: relative;
+}
+
+.effect img.top {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 180px;
+  height: 184px;
+  -webkit-transition:right .4s ease-in-out;
+  -moz-transition:right .4s ease-in-out;
+  -o-transition:right .4s ease-in-out;
+  transition:right .4s ease-in-out
+}
+
+.effect img.top:hover {
+  right:-200px;
+
+}
+
+.logopic {
+  width: 488px;
+  height: 250px;
+  display: block;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-size: 488px 250px;
+  background-image: url('../images/logo.png');
+  transition: all 0.2s;
+}
+
+.logopic:hover {
+
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  top: 0px;
+  -webkit-transform: translate(-244px, 0px);
+}
+
+
 #header {
-  background-color: #484848;
+  background-color: rgb(255, 195, 0);
 }
 
 .flex-box {
@@ -129,10 +303,10 @@ a {
 }
 
 .center-content {
-  padding-top: 2.5%;
+  padding-top: 1.0%;
   padding-left: 5%;
   padding-right: 5%;
-  padding-bottom: 2.5%
+  padding-bottom: 1.0%
 }
 
 ul {
@@ -140,15 +314,16 @@ ul {
 }
 
 .biopic {
-  float: left;
-  padding: 10px;
-  width: 200px;
+
+  width: 250px;
   display: none;
+  overflow: hidden;
 }
 
 img {
   padding: 10px;
 }
+
 
 /* Bar chart stuff */
 .chart div {
@@ -178,20 +353,88 @@ span {
 
 @media only screen and (max-width:900px) {
   .biopic {
-    width: 175px;
+    width: 200px;
   }
 }
 
 @media only screen and (max-width: 750px) {
-  #letsConnect {
-    margin-top: 10%;
-  }
+
   .biopic {
     width: 150px;
   }
   .welcome-message {
     display: none;
   }
+}
+
+@media only screen and (max-width: 550px) {
+
+ h2  {
+  font-size: 18px;
+  text-align: center;
+ }
+
+  #logobox {
+  width:170px;
+  overflow: hidden;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+  #process-wrapper {
+  width: 140px;
+  margin: 15px auto;
+}
+
+  .flex-box {
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 10px;
+  }
+
+  #process {
+  width:120px;
+  margin: 0 auto;
+}
+  #div1, #div2, #div3, #div4 {
+  box-sizing: border-box;
+  height: 170px;
+  float: left;
+}
+
+
+img {
+  width:100%;
+  padding:10px 0 10px 0;
+}
+
+.logoheader img.bottom {
+  left: 0px;
+  top: 0px;
+  padding: 0 10px 0 10px;
+  width: 150px;
+  height: 154px;
+  position: relative;
+}
+
+.effect img.top {
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 0 10px 0 10px;
+  width: 150px;
+  height: 154px;
+  -webkit-transition:right .4s ease-in-out;
+  -moz-transition:right .4s ease-in-out;
+  -o-transition:right .4s ease-in-out;
+  transition:right .4s ease-in-out
+}
+
 }
 
 #map {
@@ -206,6 +449,8 @@ span {
   width: 100%;
   padding-bottom: 5%;
 }
+
+
 
 @media only screen and (min-width: 750px) {
   #skillsH3,
