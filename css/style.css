@@ -1,22 +1,22 @@
-* {
-  padding:0;
-  margin:0;
-  font-family: 'Oswald', sans-serif;
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Oswald", sans-serif;
 }
 
 .clearfix {
   overflow: auto;
+  margin: 0;
 }
 
 .education-entry, .work-entry, .project-entry {
   padding-left: 5%;
   padding-right: 5%;
-
 }
 
 h1 {
   font-size: 40px;
-  color: #000000;
+  color: #000;
   line-height: 48px;
   display: inline;
 }
@@ -24,7 +24,7 @@ h1 {
 h2 {
   font-weight: bold;
   font-size: 24px;
-  color: #000000;
+  color: #000;
   line-height: 29px;
   padding: 10px;
 }
@@ -32,103 +32,108 @@ h2 {
 h3 {
   font-style: italic;
   font-size: 20px;
-  color: #000000;
+  color: #000;
   line-height: 22px;
 }
 
 h4 {
   font-weight: bold;
   font-size: 14px;
-  color: #000000;
+  color: #000;
   line-height: 17px;
 }
 
 h6 {
   font-weight: bold;
   font-size: 16px;
-  color: #000000;
+  color: #000;
 }
 
-h2, h3, h4, h5 {
-  padding:10px;
+h2,
+h3,
+h4,
+h5 {
+  padding: 10px;
   padding-left: 5%;
   padding-right: 5%;
+  margin: 0;
 }
 
 /* Creative Process Graphs */
-#process-wrapper {
+.process-wrapper {
   margin: 15px auto;
 }
 
-#process {
-  width:85%;
+.process {
+  width: 85%;
   margin: 0 auto;
 }
 
 .background {
-    fill: rgb(255, 195, 0);;
-    fill-opacity: 0.01;
+  fill: rgb (255, 195, 0);;
+  fill-opacity: 0.01;
 }
 
 .component {
-    fill: orange;
+  fill: orange;
 }
 
-.component .label {
-    text-anchor: middle;
-    fill: #000;
+.component
+.label {
+  text-anchor: middle;
+  fill: #000;
 }
 
 .arc {
-    stroke-weight:0.1;
-    fill: #000;
+  stroke-weight: 0.1;
+  fill: #000;
 }
 
 
 .arc2 {
-    stroke-weight:0.1;
-    fill: #000;
+  stroke-weight: 0.1;
+  fill: #000;
 }
 
 
 .label {
-    text-anchor: middle;
+  text-anchor: middle;
 }
 
 .radial-svg {
-    display: block;
-    height: 150px;
-    margin: 0 auto;
+  display: block;
+  height: 150px;
+  margin: 0 auto;
 }
 
-#test .arc2 {
-  stroke-weight:0.1;
+.arc2 {
+  stroke-weight: 0.1;
   fill: #3660b0;
 }
 
-#outer {
-  background:#FFFFFF;
-  border-radius: 5px;
-  color: #000;
-}
-
-#div1, #div2, #div3, #div4 {
+#div1,
+#div2,
+#div3,
+#div4 {
   box-sizing: border-box;
-  width:33%;
+  width: 33%;
   float: left;
 }
 
-#div2 .arc {
+#div2
+.arc {
   stroke-weight: 0.1;
   fill: #000;
 }
 
-#div2 .arc2 {
+#div2
+.arc2 {
   stroke-weight: 0.1;
   fill: #000;
 }
 
-#div3 .arc {
+#div3
+.arc {
   stroke-weight: 0.1;
   fill: #000;
 }
@@ -136,17 +141,15 @@ h2, h3, h4, h5 {
 .radial {
   border-radius: 3px;
   color: #000;
-
 }
 
 /* End of Graphs*/
 
-
 .date-text {
   font-style: italic;
   font-size: 15px;
-  font-family: 'Playfair Display', serif;
-  color: #000000;
+  font-family: "playfair display", serif;
+  color: #000;
   line-height: 21px;
   float: left;
 }
@@ -154,94 +157,88 @@ h2, h3, h4, h5 {
 .location-text {
   font-style: italic;
   font-size: 14px;
-  color: rgb(255, 195, 0);
+  color: rgb (255, 195, 0);
   line-height: 21px;
   float: right;
-
 }
 
 p {
   font-size: 14px;
-  color: #000000;
+  color: #000;
   line-height: 21px;
-
 }
 
 a {
-  color: #000000;
+  color: #000;
   text-decoration: none;
   margin-top: 10px;
   display: block;
-  font-family: 'Playfair Display', serif;
+  font-family: "playfair display", serif;
   font-style: italic;
   font-weight: bold;
 }
 
 hr {
-    border: 0;
-    height: 0;
-    border-top: 1px solid rgba(0, 0, 0, 0.1);
-    border-bottom: 1px solid #000000;
+  border: 0;
+  height: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid #000;
 }
 
 .welcome-message {
   font-style: italic;
   font-size: 18px;
-  color: #000000;
+  color: #000;
   line-height: 28px;
 }
 
-#skillsH3 {
-  color: #000000;
+.skillsH3 {
+  color: #000;
 }
 
 .orange {
-  background-color: #000000;
+  background-color: #000;
 }
 
 .alt-text {
   font-weight: bold;
-  color: #000000;
-  font-family: 'Playfair Display', serif;
+  color: #000;
+  font-family: "playfair display", serif;
 }
 
 .alt2-text {
   font-weight: 400;
-  font-family: 'Playfair Display', serif;
-  color: #000000;
+  font-family: "playfair display", serif;
+  color: #000;
   font-style: italic;
 }
 
 .gray {
-  background-color: #F3F3F3;
+  background-color: #f3f3f3;
   padding-bottom: 10px;
-  clear:both;
+  clear: both;
 }
 
 .dark-gray {
-  background-color: #4A4A4A;
+  background-color: #4a4a4a;
 }
 
 /* TODO: Replace with image later */
-#topheader {
+.topheader {
   background-color: rgb(255, 195, 0);
 }
 
-#logobox {
-  width:196px;
-
+.logobox {
+  width: 240px;
   overflow: hidden;
   display: block;
   margin-left: auto;
   margin-right: auto;
-
 }
 
 .logoheader {
   position: relative;
   overflow: hidden;
-
-
 }
 
 .logoheader img.bottom {
@@ -258,15 +255,14 @@ hr {
   top: 0;
   width: 180px;
   height: 184px;
-  -webkit-transition:right .4s ease-in-out;
-  -moz-transition:right .4s ease-in-out;
-  -o-transition:right .4s ease-in-out;
-  transition:right .4s ease-in-out
+  -webkit-transition: right .4s ease-in-out;
+  -moz-transition: right .4s ease-in-out;
+  -o-transition: right .4s ease-in-out;
+  transition: right .4s ease-in-out;
 }
 
 .effect img.top:hover {
   right:-200px;
-
 }
 
 .logopic {
@@ -276,21 +272,20 @@ hr {
   overflow: hidden;
   background-repeat: no-repeat;
   background-size: 488px 250px;
-  background-image: url('../images/logo.png');
+  background-image: url("../images/logo.png");
   transition: all 0.2s;
 }
 
 .logopic:hover {
-
   -webkit-transition: 0.2s;
   transition: 0.2s;
   top: 0px;
-  -webkit-transform: translate(-244px, 0px);
+  -webkit-transform: translate (-244px, 0px);
 }
 
 
 #header {
-  background-color: rgb(255, 195, 0);
+  background-color: rgb (255, 195, 0);
 }
 
 .flex-box {
@@ -306,7 +301,7 @@ hr {
   padding-top: 1.0%;
   padding-left: 5%;
   padding-right: 5%;
-  padding-bottom: 1.0%
+  padding-bottom: 1.0%;
 }
 
 ul {
@@ -314,7 +309,6 @@ ul {
 }
 
 .biopic {
-
   width: 250px;
   display: none;
   overflow: hidden;
@@ -328,7 +322,7 @@ img {
 /* Bar chart stuff */
 .chart div {
   font: 10px sans-serif;
-  background-color: #4A4A4A;
+  background-color: #4a4a4a;
   text-align: right;
   padding: 3px;
   margin: 1px;
@@ -346,62 +340,64 @@ span {
 }
 
 @media only screen and (max-width: 1024px) {
-  #letsConnect {
-    margin-top: 5%;
-  }
+#letsConnect {
+  margin-top: 5%;
+}
 }
 
-@media only screen and (max-width:900px) {
-  .biopic {
-    width: 200px;
-  }
+@media only screen and (max-width: 900px) {
+.biopic {
+  width: 200px;
+}
 }
 
 @media only screen and (max-width: 750px) {
 
-  .biopic {
-    width: 150px;
-  }
-  .welcome-message {
-    display: none;
-  }
+.biopic {
+  width: 150px;
+}
+.welcome-message {
+  display: none;
+}
 }
 
 @media only screen and (max-width: 550px) {
-
- h2  {
+h2  {
   font-size: 18px;
   text-align: center;
- }
+}
 
-  #logobox {
-  width:170px;
+.logobox {
+  width: 210px;
   overflow: hidden;
   display: block;
   margin-left: auto;
   margin-right: auto;
-
 }
 
-  #process-wrapper {
+.process-wrapper {
   width: 140px;
   margin: 15px auto;
 }
 
-  .flex-box {
+.flex-box {
   display: -webkit-flex;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   justify-content: space-around;
   padding: 10px;
-  }
+}
 
-  #process {
-  width:120px;
+.process {
+  width: 120px;
   margin: 0 auto;
 }
-  #div1, #div2, #div3, #div4 {
+
+#div1,
+#div2,
+#div3,
+#div4 {
   box-sizing: border-box;
   height: 170px;
   float: left;
@@ -409,8 +405,8 @@ span {
 
 
 img {
-  width:100%;
-  padding:10px 0 10px 0;
+  width: 100%;
+  padding: 10px 0 10px 0;
 }
 
 .logoheader img.bottom {
@@ -429,10 +425,10 @@ img {
   padding: 0 10px 0 10px;
   width: 150px;
   height: 154px;
-  -webkit-transition:right .4s ease-in-out;
-  -moz-transition:right .4s ease-in-out;
-  -o-transition:right .4s ease-in-out;
-  transition:right .4s ease-in-out
+  -webkit-transition: right .4s ease-in-out;
+  -moz-transition: right .4s ease-in-out;
+  -o-transition: right .4s ease-in-out;
+  transition: right .4s ease-in-out;
 }
 
 }
@@ -447,14 +443,17 @@ img {
 #mapDiv {
   height: 400px;
   width: 100%;
-  padding-bottom: 5%;
+  padding-bottom: 10%;
 }
 
-
-
 @media only screen and (min-width: 750px) {
-  #skillsH3,
-  .biopic {
-    display: block;
-  }
+.skillsH3 {
+  display: block;
+  margin: 0;
+}
+
+.biopic {
+  display: block;
+
+}
 }

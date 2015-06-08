@@ -42,8 +42,11 @@ need to load. You'll see a lot of <link>s to CSS files for styles and
   <!-- More on helper.js in the class -->
   <script src="js/helper.js"></script>
 
+  <!-- Content Delivery Network, the files are already pre-cache at the user site -->
+  <script type="text/javascript" src='https://code.jquery.com/jquery-2.1.4.min.js'></script>
+
   <!-- Google fonts -->
-<link href='http://fonts.googleapis.com/css?family=Playfair+Display:400,700,900,400italic,700italic,900italic|Oswald:400,700,300' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Playfair+Display:400,700,900,400italic,700italic,900italic|Oswald:400,700,300' rel='stylesheet' type='text/css'>
   <!--
   Uncomment the <script> tag below when you're ready to add an interactive
   Google Map to your resume!
@@ -56,16 +59,10 @@ need to load. You'll see a lot of <link>s to CSS files for styles and
 
   <meta name="viewport" content="width=device-width">
 </head>
-<body unresolved>
-  <div id="main">
-    <!--
-    Everything from here to the <script> tag below is the skeleton of your
-    website. Your code will add information to each of the sections of the
-    resume below. You can pretty easily figure out what each section will
-    display by looking at the id or at what's written between the <h2> tags.
-    -->
-    <div id="topheader" class="center-content clearfix">
-      <div id="logobox">
+<body>
+
+    <div class="topheader center-content clearfix">
+      <div class="logobox">
         <ul class="logoheader effect">
         <li><img class='bottom' src="images/bottom.png" alt=""/></li>
         <li><img class='top' src="images/top.png" alt=""/></li>
@@ -75,9 +72,9 @@ need to load. You'll see a lot of <link>s to CSS files for styles and
       <ul id="topContacts" class='flex-box'></ul>
       </div>
 
-      <div id="process-wrapper" class="center-content clearfix">
+      <div class="process-wrapper center-content clearfix">
       <h2>Creative Process:</h2>
-      <div id="process" class='flex-box'>
+      <div class='process flex-box'>
         <div id="div1"></div>
         <div id="div2"></div>
         <div id="div3"></div>
@@ -105,7 +102,7 @@ need to load. You'll see a lot of <link>s to CSS files for styles and
       <h2>WHERE I'VE LIVED AND WORKED</h2>
     </div>
 
-  </div>
+
 
   <!--
   The next line tells the browser where to download the JavaScript file you'll be
@@ -114,51 +111,5 @@ need to load. You'll see a lot of <link>s to CSS files for styles and
   -->
   <script src="js/resumeBuilder.js"></script>
 
-
-  <!--
-  These scripts are written in JavaScript. You'll be breaking them down as part of
-  a quiz. Essentially, the next few lines are checking to see if you have not
-  changed each section of the resume. If you have not made any changes to a section
-  of the resume, then that part of the resume does not show up. More on this in the
-  course.
-  -->
-
-  <script type="text/javascript">
-    // Notice how all of a sudden there's JavaScript inside this HTML
-    // document? You can write JavaScript between <script> tags. At the end of your
-    // JavaScript, don't forget the closing script tag with the slash (/).
-
-
-    // Also, this is a JavaScript style comment. You can comment in JavaScript with:
-
-    //   two slashes for all following characters on a single line, or
-
-    /*
-        an opening and closing set of slash asterisks for block comments.
-    */
-
-
-    if(document.getElementsByClassName('flex-item').length === 0) {
-      document.getElementById('topContacts').style.display = 'black';
-    }
-    if(document.getElementsByTagName('h1').length === 0) {
-      document.getElementById('header').style.backgroundColor = 'black';
-    }
-    if(document.getElementsByClassName('work-entry').length === 0) {
-      document.getElementById('workExperience').style.backgroundColor = 'black';
-    }
-    if(document.getElementsByClassName('project-entry').length === 0) {
-      document.getElementById('projects').style.backgroundColor = 'black';
-    }
-    if(document.getElementsByClassName('education-entry').length === 0) {
-      document.getElementById('education').style.backgroundColor = 'black';
-    }
-    if(document.getElementsByClassName('flex-item').length === 0) {
-      document.getElementById('letsConnect').style.backgroundColor = 'black';
-    }
-    if(document.getElementById('map') === null) {
-      document.getElementById('mapDiv').style.backgroundColor = 'black';
-    }
-  </script>
 </body>
 </html>
